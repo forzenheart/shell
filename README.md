@@ -13,12 +13,21 @@
 	h) quit——退出shell。
 	i) shell的环境变量应该包含shell=<pathname>/myshell.其中<pathname>/myshellshell是可执行程序shell的完整路径（不是你的目录下的硬连线路径，而是它的执行路径）.
 
+<<<<<<< HEAD
 ####2.其他的命令行输入被解释为程序调用，shell创建并执行这个程序，作为自己的子进程。程序的执行环境包含以下条目:
 parent=<pathname>/myshell,其中<pahtname>/myshell已经在1.i里面解释过了。
 ####3.shell必须能够从文件中提取命令行输入，例如shell使用以下命令行被调用：
 myshell batchfile
 	这个批处理文件包含一组命令集，当到达文件结尾时shell退出。很明显，如果shell被调用时没有参数，它会在屏幕上显示提示符请求用户输入。
 ####4.shell必须支持I/O重定向，stdin和stdout。或者其中之一。例如命令行为:
+=======
+	2.其他的命令行输入被解释为程序调用，shell创建并执行这个程序，作为自己的子进程。程序的执行环境包含以下条目:
+parent=<pathname>/myshell,其中<pahtname>/myshell已经在1.i里面解释过了。
+3.shell必须能够从文件中提取命令行输入，例如shell使用以下命令行被调用：
+	myshell batchfile
+	这个批处理文件包含一组命令集，当到达文件结尾时shell退出。很明显，如果shell被调用时没有参数，它会在屏幕上显示提示符请求用户输入。
+	4.shell必须支持I/O重定向，stdin和stdout。或者其中之一。例如命令行为:
+>>>>>>> 56d8b1a37067cecfe22ab71457cba33e57d65b62
 programname arg1 arg2 < inputfile > outputfile 
 使用arg1和arg2执行程序programname，输入流文件被替换为inputfile，输出流文件被替换为outputfile.
 	stdout重定向应该支持以下内部命令：dir, environ, echo, &help.
