@@ -44,7 +44,7 @@ stdout重定向应该支持以下内部命令：dir, environ, echo, &help.
 	# CompLab/01 tutor: Fred Bloggs
 	myshell: mysheel.c utility.c -o myshell
 	gcc -Wall myshell.c utility.c -o myshell
-	提示：上面makefile的第４行必须以制表符开始。
+提示：上面makefile的第４行必须以制表符开始。
 ####7.根据上面提供的实例，提交的目录应该包含以下文件:
 	makefile
 	myshell.c
