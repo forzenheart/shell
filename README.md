@@ -3,11 +3,11 @@
 ###shell或者命令行解释器是操作系统中最基本的用户接口。
 ###设计一个简单的shell程myshell，它具有以下属性：
 ####1.这个shell程序必须支持以下内部命令： 
-* a) cd /<directory/>——把当前默认目录改变为<directory>.如果没有<directory>参数，则显示当前目录。如果该目录不存在，则会出现合适的错误信息。这个命令也可以改变PWD环境变量。
+* a) cd &<directory&>——把当前默认目录改变为<directory>.如果没有<directory>参数，则显示当前目录。如果该目录不存在，则会出现合适的错误信息。这个命令也可以改变PWD环境变量。
 * b) clr ——清屏
-* c) dir /<directory/>——列出目录<directory>的内容。
+* c) dir <directory>——列出目录<directory>的内容。
 * d) environ——列出所以的环境变量
-* e) echo /<coommnet/>——在屏幕上显示<coommnet>并换行(多个空格和制表符可能被缩减为一个空格).
+* e) echo <coommnet>——在屏幕上显示<coommnet>并换行(多个空格和制表符可能被缩减为一个空格).
 * f) help——显示用户手册，并且使用more命令过滤。
 * g) pause——停止shell操作直到按下回车键。
 * h) quit——退出shell。
