@@ -1,17 +1,17 @@
 # shell
 ##编程项目：开发一个shell程序
 ###shell或者命令行解释器是操作系统中最基本的用户接口。
-###设计一个简单的shell程myshell，它具有以下属性： <br>
-####1.这个shell程序必须支持以下内部命令： <br>
-	a) cd <directory>-把当前默认目录改变为<directory>.如果没有<directory>参数，则显示当前目录。如果该目录不存在，则会出现合适的错误信息。这个命令也可以改变PWD环境变量。<br>
-	b) clr ——清屏<br>
-	c) dir <directory>——列出目录<directory>的内容。
-	d) environ——列出所以的环境变量
-	e) echo <coommnet>——在屏幕上显示<coommnet>并换行(多个空格和制表符可能被缩减为一个空格).
-	f) help——显示用户手册，并且使用more命令过滤。
-	g) pause——停止shell操作直到按下回车键。
-	h) quit——退出shell。
-	i) shell的环境变量应该包含shell=<pathname>/myshell.其中<pathname>/myshellshell是可执行程序shell的完整路径（不是你的目录下的硬连线路径，而是它的执行路径）.
+###设计一个简单的shell程myshell，它具有以下属性：
+####1.这个shell程序必须支持以下内部命令： 
+* a) cd <directory>-把当前默认目录改变为<directory>.如果没有<directory>参数，则显示当前目录。如果该目录不存在，则会出现合适的错误信息。这个命令也可以改变PWD环境变量。
+	* b) clr ——清屏
+	* c) dir <directory>——列出目录<directory>的内容。
+	* d) environ——列出所以的环境变量
+	* e) echo <coommnet>——在屏幕上显示<coommnet>并换行(多个空格和制表符可能被缩减为一个空格).
+	* f) help——显示用户手册，并且使用more命令过滤。
+	* g) pause——停止shell操作直到按下回车键。
+	* h) quit——退出shell。
+	* i) shell的环境变量应该包含shell=<pathname>/myshell.其中<pathname>/myshellshell是可执行程序shell的完整路径（不是你的目录下的硬连线路径，而是它的执行路径）.
 
 <<<<<<< HEAD
 ####2.其他的命令行输入被解释为程序调用，shell创建并执行这个程序，作为自己的子进程。程序的执行环境包含以下条目:
