@@ -13,7 +13,7 @@ shell或者命令行解释器是操作系统中最基本的用户接口。
 	h) quit——退出shell。
 	i) shell的环境变量应该包含shell=<pathname>/myshell.其中<pathname>/myshellshell是可执行程序shell的完整路径（不是你的目录下的硬连线路径，而是它的执行路径）.
 
-2.其他的命令行输入被解释为程序调用，shell创建并执行这个程序，作为自己的子进程。程序的执行环境包含以下条目:
+	2.其他的命令行输入被解释为程序调用，shell创建并执行这个程序，作为自己的子进程。程序的执行环境包含以下条目:
 parent=<pathname>/myshell,其中<pahtname>/myshell已经在1.i里面解释过了。
 3.shell必须能够从文件中提取命令行输入，例如shell使用以下命令行被调用：
 myshell batchfile
